@@ -1,0 +1,17 @@
+package br.com.unitri.posjava.colecoes.ordenacao;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		List<Aluno> alunos = new ArrayList<Aluno>();
+		
+		Aluno a1 = new Aluno("Zezin", 1l);
+		Aluno a2 = new Aluno("Maria", 2l);
+ 		
+	}
+
+}

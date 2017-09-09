@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;RegraMaiorIdade.java&apos; to &apos;posjava/src/br.com.unitri.posjava.colecoes.regras&apos;&#x0A;- Original project: &apos;posjava&apos;&#x0A;- Destination element: &apos;posjava/src/br.com.unitri.posjava.colecoes.regras&apos;&#x0A;- Original element: &apos;br.com.unitri.posjava.colecoes.regras.RegraMaiorIdade.java&apos;" description="Copy compilation unit" destination="/src&lt;br.com.unitri.posjava.colecoes.regras" element1="/src&lt;br.com.unitri.posjava.colecoes.regras{RegraMaiorIdade.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1504967445609" units="1" version="1.0"/>
+</session>

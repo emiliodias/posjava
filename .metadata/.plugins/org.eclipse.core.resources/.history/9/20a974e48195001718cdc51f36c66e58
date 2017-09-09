@@ -1,0 +1,27 @@
+package br.com.unitri.posjava.colecoes.generics;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class RepositorioDeDados {
+
+	private List dados = new ArrayList();
+	
+	public void salvar(String dado) {
+		
+		dados.add(dado);
+		
+	}
+	
+	public String busca(String dado) {
+		
+		int index = dados.indexOf(dado);
+		
+		if(index != -1)
+			return (String)dados.get(index);
+		
+		return null;
+		
+	}
+	
+}

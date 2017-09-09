@@ -1,0 +1,18 @@
+package br.com.unitri.posjava.colecoes.generics;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		RepositorioDeDados repositorio = new RepositorioDeDados();
+		
+		repositorio.salvar("Valor 1");
+		repositorio.salvar(1);
+		
+		String dado = (String) repositorio.busca(1);
+		
+		System.out.println(dado);
+		
+	}
+	
+}
