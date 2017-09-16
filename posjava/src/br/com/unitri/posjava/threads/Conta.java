@@ -6,8 +6,6 @@ public class Conta {
 	
 	public Conta(Long saldo) {
 		
-		
-		
 		this.saldo = saldo;
 		
 	}
@@ -17,9 +15,8 @@ public class Conta {
 		if(saldo - valor >=0) {
 			
 			try {
-				Thread.sleep(1);
+				Thread.sleep(100000);
 			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 			

@@ -1,8 +1,8 @@
 package br.com.unitri.posjava.threads;
 
-public class Orquestrando {
+public class Main {
 
-	public static void main(String[] args) throws InterruptedException {
+public static void main(String[] args) throws InterruptedException {
 		
 		Conta conta1 = new Conta(100l);
 		
@@ -21,11 +21,6 @@ public class Orquestrando {
 			}.start();
 		
 		}
-		
-		
-		
-		
-		
-	}
 	
+}
 }
