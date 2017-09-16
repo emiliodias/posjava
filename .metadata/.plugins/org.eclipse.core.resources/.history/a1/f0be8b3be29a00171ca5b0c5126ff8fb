@@ -1,7 +1,0 @@
-package br.com.unitri.posjava.java8.interfacesfuncionais;
-
-public interface Regra {
-
-	public boolean valida(T t);
-	
-}

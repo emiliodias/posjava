@@ -1,9 +1,0 @@
-package br.com.unitri.posjava.colecoes.ordenacao;
-
-public class Aluno {
-	
-	private String nome;
-	
-	private Long matricula;
-
-}

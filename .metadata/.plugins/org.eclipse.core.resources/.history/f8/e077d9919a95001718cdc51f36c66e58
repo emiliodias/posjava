@@ -1,5 +1,0 @@
-package br.com.unitri.posjava.app;
-
-public class PedidoJaExistenteException extends RuntimeException {
-
-}

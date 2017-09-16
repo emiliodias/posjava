@@ -1,9 +1,0 @@
-package br.com.unitri.posjava.app;
-
-public class PedidosDAO {
-	
-	private Map<Long, Pedido> pedidos = new HashMap<Long, Pedido>();
-	
-	
-
-}
