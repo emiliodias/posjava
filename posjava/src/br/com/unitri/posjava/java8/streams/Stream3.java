@@ -10,8 +10,11 @@ public class Stream3 {
 
 		BiFunction<String, Integer, Usuario> c = Usuario::new;
 
-		List<Usuario> usuarios = Arrays.asList(c.apply("Usuario1", 10), c.apply("Usuario1", 20), c.apply("Usuario1", 2),
-				c.apply("Usuario1", 12));
+		List<Usuario> usuarios = Arrays.
+				asList(c.apply("Usuario1", 10),   
+					   c.apply("Usuario1", 20), 
+					   c.apply("Usuario1", 2),
+					   c.apply("Usuario1", 12));
 
 		Integer response = usuarios.stream() //Obtem o stream
 								   .filter(u -> u.getPontos() > 2) //Filtra os valores desejados

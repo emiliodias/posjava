@@ -4,7 +4,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.BiFunction;
-import java.util.stream.Collectors;
+import java.util.function.Consumer;
+import java.util.function.Predicate;
 
 public class Stream2 {
 
@@ -12,28 +13,36 @@ public class Stream2 {
 
 		BiFunction<String, Integer, Usuario> c = Usuario::new;
 
-		List<Usuario> usuarios = Arrays.asList(c.apply("Usuario1", 10), c.apply("Usuario1", 20),
-				c.apply("Usuario1", 2), c.apply("Usuario1", 12), c.apply("Usuario1", 100), c.apply("Usuario1", 150));
+		List<Usuario> usuarios = Arrays.asList(c.apply("Usuario1", 10), 
+				c.apply("Usuario1", 20), c.apply("Usuario1", 2),
+				c.apply("Usuario1", 12), c.apply("Usuario1", 100), 
+				c.apply("Usuario1", 150));
 
-		
-		
 		List<Usuario> novaLista = new ArrayList<Usuario>();
 		
-		usuarios.stream().filter(u -> u.getPontos() >= 20).forEach(novaLista::add);
+		Predicate<Usuario> regraFiltro = new Predicate<Usuario>() {
+
+			@Override
+			public boolean test(Usuario u) {
+				return u.getPontos() >= 20;
+			}
+			
+		};
+		
+		Consumer<Usuario> consumer = new Consumer<Usuario>() {
+
+			@Override
+			public void accept(Usuario u) {
+				novaLista.add(u);
+			}
+		};
+
+		//usuarios.stream().filter(u -> u.getPontos() >= 20).forEach(novaLista::add);
+
+		usuarios.stream().filter(regraFiltro).forEach(consumer);
 		
 		System.out.println(novaLista);
-		
-		//Outra maneira...
-		
-		List<Usuario> nova = usuarios.stream().filter(u -> u.getPontos() > 100).collect(Collectors.toList());
-		
-		List<Integer> pontos = usuarios.stream()
-			    .map(Usuario::getPontos)
-			    .collect(Collectors.toList());
-		
-		//filter -> retorna um booleano indicando se o elemento permanece ou não
-		//map - > mapeia o valor encontrado para uma nova lista
-		
+
 	}
 
 }
