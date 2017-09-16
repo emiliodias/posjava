@@ -1,0 +1,13 @@
+package br.com.unitri.posjava.threads;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		Impressora impressora = new Impressora();
+		
+		
+		
+	}
+
+}

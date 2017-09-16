@@ -1,0 +1,11 @@
+package br.com.unitri.posjava.java8;
+
+public class Testando <T>{
+	
+	public void teste(MyFuncional<T> teste) {
+		
+		teste.apply(teste);
+		
+	}
+
+}

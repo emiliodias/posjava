@@ -1,0 +1,19 @@
+package br.com.unitri.posjava.java8;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class Testando {
+	
+	public void teste(MyFuncional<String> teste) {
+		
+		List<String> abc = Arrays.asList("a", "b", "c");
+		
+		abc.forEach(teste);
+		
+		
+		
+	}
+
+}

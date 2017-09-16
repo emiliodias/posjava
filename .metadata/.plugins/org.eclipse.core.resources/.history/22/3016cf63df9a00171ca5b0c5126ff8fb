@@ -1,0 +1,22 @@
+package br.com.unitri.posjava.java8.streams;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+
+public class Stream4 {
+
+	public static void main(String[] args) throws Exception {
+
+		try {
+			Files.list(Paths.get("/tmp")).filter(p -> p.toString().endsWith(".txt"))
+					.map(p -> Files.lines(p))
+					.forEach(System.out::println);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+
+}

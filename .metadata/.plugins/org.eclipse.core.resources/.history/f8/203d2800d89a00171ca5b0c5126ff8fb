@@ -1,0 +1,11 @@
+package br.com.unitri.posjava.java8.methodreference;
+
+public interface Supplier<T> {
+
+	default public T get() {
+		
+		return new T();
+		
+	}
+	
+}

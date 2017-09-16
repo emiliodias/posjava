@@ -1,0 +1,39 @@
+package br.com.unitri.posjava.threads;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Buffer extends Thread {
+	
+	private static List<String> buffer = new ArrayList<String>();
+	
+	
+	public void cache(String valor) {
+		
+		buffer.add(valor);
+				
+	}
+	
+	public void run() {
+		
+		while(true) {
+			
+			while(buffer.size() < 100){
+				System.out.println(buffer.size());
+			}
+			
+			synchronized (this) {
+				String valor = buffer.remove(0);
+				
+				System.out.println(valor);
+				
+				this.notify();
+			}
+			
+			
+			
+		}
+		
+	}
+
+}

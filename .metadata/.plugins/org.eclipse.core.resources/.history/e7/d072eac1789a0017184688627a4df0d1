@@ -1,0 +1,22 @@
+package br.com.unitri.posjava.java8;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Testando<String> t = new Testando<String>();
+
+		t.teste((String u) -> {
+			System.out.println(u);
+			System.out.println(u);
+		} , "Emílio Dias");
+		
+		
+		String teste = "abc";
+		
+		MyFuncional<String> x = (String a) -> {System.out.println(teste);};
+		
+
+	}
+
+}

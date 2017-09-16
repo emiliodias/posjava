@@ -1,0 +1,18 @@
+package br.com.unitri.posjava.colecoes.maps;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class RepositorioDeDados {
+
+	private Map<String, List<Cliente>> dados = new HashMap<String, List<Cliente>>();
+	
+	
+	public void salvar(Cliente cliente) {
+		
+		
+		
+	}
+	
+}

@@ -1,0 +1,7 @@
+package br.com.unitri.posjava.java8;
+
+public interface MyFuncional<T> {
+	
+	public void apply(T teste);
+
+}

@@ -1,0 +1,16 @@
+package br.com.unitri.posjava.colecoes.maps;
+
+public class MapaDeValores {
+
+	public static void main(String[] args) {
+		
+		RepositorioDeDados dados = new RepositorioDeDados();
+		
+		Cliente c1 = new Cliente();
+		c1.setId(1l);
+		
+		
+		
+	}
+	
+}

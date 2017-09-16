@@ -1,0 +1,13 @@
+package br.com.unitri.posjava.java8;
+
+public interface MyFuncional {
+	
+	public void apply(String teste);
+	
+	default public void teste() {
+		
+		System.out.println();
+		
+	}
+
+}

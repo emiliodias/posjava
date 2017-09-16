@@ -1,0 +1,13 @@
+package br.com.unitri.posjava.java8.streams;
+
+import java.util.function.BiFunction;
+
+public class Stream3 {
+	
+	public static void main(String[] args) {
+		
+		BiFunction<String, Integer, Usuario> factory = Usuario::new;
+		
+	}
+
+}

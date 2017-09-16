@@ -1,0 +1,24 @@
+package br.com.unitri.posjava.threads;
+
+public class Conta {
+	
+	private long saldo = 0l;
+	
+	public Conta(Long saldo) {
+		
+		this.saldo = saldo;
+		
+	}
+	
+	public void saca(long valor) {
+		
+		if(saldo - valor >=0)
+			saldo = saldo - valor;
+		
+	}
+
+	public long getSaldo() {
+		return saldo;
+	}
+
+}

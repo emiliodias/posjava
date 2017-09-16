@@ -1,0 +1,39 @@
+package br.com.unitri.posjava.threads;
+
+public class Orquestrando {
+
+	public static void main(String[] args) {
+		
+		Buffer meuBuffer = new Buffer();
+		
+		new Thread() {
+			
+			public void run() {
+				
+				try {
+					meuBuffer.imprime();
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
+				
+			}
+			
+		}.start();
+		
+		for(int i=0;i<200;i++) {
+			
+			new Thread() {
+				
+				public void run() {
+					
+					meuBuffer.cache(String.valueOf(i));
+					
+				}
+				
+			}.start();
+			
+		}
+		
+	}
+	
+}

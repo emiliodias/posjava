@@ -1,0 +1,5 @@
+package br.com.unitri.posjava.app;
+
+public class PedidosDAO {
+
+}

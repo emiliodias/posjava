@@ -1,0 +1,34 @@
+package br.com.unitri.posjava.threads;
+
+public class Orquestrando {
+
+	public static void main(String[] args) throws InterruptedException {
+		
+		Conta conta1 = new Conta(100l);
+		
+		/*for(int i=0;i<200;i++) {
+			conta1.saca(1);
+		}
+		
+		System.out.println("Valor da conta: " + conta1.getSaldo());*/
+		
+		
+		
+		new Thread() {
+			
+			public void run() {
+				
+				conta1.saca(1);
+				
+			}
+			
+		}.start();
+		
+		
+		
+		System.out.println(conta1.getSaldo());
+		
+		
+	}
+	
+}

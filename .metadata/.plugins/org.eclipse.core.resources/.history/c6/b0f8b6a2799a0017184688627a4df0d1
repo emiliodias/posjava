@@ -1,0 +1,16 @@
+package br.com.unitri.posjava.java8;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Testando {
+	
+	public void teste(MyFuncional teste) {
+		
+		List<String> abc = new ArrayList<String>();
+		
+		teste.apply(teste);
+		
+	}
+
+}

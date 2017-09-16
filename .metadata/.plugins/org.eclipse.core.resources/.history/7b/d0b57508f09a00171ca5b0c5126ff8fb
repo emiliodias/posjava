@@ -1,0 +1,35 @@
+package br.com.unitri.posjava.threads;
+
+public class ImpressoraCache extends Thread {
+
+	public void run() {
+
+		
+
+			while (Buffer.size() < 100){
+				try {
+					this.wait();
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+
+			synchronized (this) {
+				
+				for(int i=0;i<100;i++) {
+				
+					String valor = Buffer.remove();
+	
+					System.out.println(valor);
+	
+					this.notify();
+				
+				}
+			}
+
+		
+
+	}
+
+}

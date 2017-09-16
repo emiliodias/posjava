@@ -1,0 +1,16 @@
+package br.com.unitri.posjava.colecoes.set;
+
+public class Funcionario {
+	
+	private String nome;
+	
+	private Long id;
+	
+	public Funcionario(String nome, Long id) {
+		
+		this.nome = nome;
+		this.id = id;
+		
+	}
+
+}

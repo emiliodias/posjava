@@ -1,0 +1,11 @@
+package br.com.unitri.posjava.threads;
+
+public class Impressora {
+	
+	public void imprime(int start, int end) {
+		
+		
+		
+	}
+
+}
