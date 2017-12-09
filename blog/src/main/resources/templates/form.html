@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Novo post...</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	
+    <h1>Criar novo Post...</h1>
+    
+    <form action="/admin/newpost" method="post">
+    
+    	<p>Titulo: <input type="text" id="title" name="title"></input></p>
+        <p>Texto: <textarea rows="4" cols="50" id="text" name="text" ></textarea></p>
+        <p><input type="submit" value="Criar post" /> <input type="reset" value="Reset" /></p>
+        
+    </form>
+    
+</body>
+</html>
