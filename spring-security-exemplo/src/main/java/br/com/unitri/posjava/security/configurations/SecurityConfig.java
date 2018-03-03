@@ -12,9 +12,6 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
-	// @Autowired
-	// private BllazonAuthenticationProvider authenticationProvider;
-
 	@Override
 	@Bean
 	public AuthenticationManager authenticationManagerBean() throws Exception {
