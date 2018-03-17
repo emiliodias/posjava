@@ -23,7 +23,7 @@ import br.com.unitri.posjava.crud.view.dto.AlunoDTO;
 public class AlunosController {
 	
 	@Autowired
-	@Qualifier("alunosServiceWS")
+	@Qualifier("alunosServiceDataBase")
 	private AlunosService alunosService;
 	
 	@RequestMapping

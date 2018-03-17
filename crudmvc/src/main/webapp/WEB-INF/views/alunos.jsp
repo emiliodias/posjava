@@ -1,6 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
 <html>
 <head>
 	<meta charset="UTF-8">
@@ -31,7 +32,13 @@
 			<p>Endereço: <form:input path="endereco"/></p>
 			<p>Complemento: <form:input path="complemento"/></p>
 			<p>Estado: <form:input path="estado"/></p>
-			<p><input type="submit" value="Salvar"></input></p>
+			<p>
+			
+				<sec:authorize access="hasRole('gerente')">
+					<input type="submit" value="Salvar"></input>
+				</sec:authorize>
+			
+			</p>
 		
 		</form:form>
 		
