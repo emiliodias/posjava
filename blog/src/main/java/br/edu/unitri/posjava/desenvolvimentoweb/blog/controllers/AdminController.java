@@ -1,7 +1,5 @@
 package br.edu.unitri.posjava.desenvolvimentoweb.blog.controllers;
-import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -23,31 +21,6 @@ public class AdminController {
 	@Autowired
 	private PostRepository postRepository;
 	
-	@RequestMapping("/cursojava")
-	 public ModelAndView teste() {
-		 
-		ModelAndView teste = new ModelAndView("teste");
-		
-		teste.addObject("helloWorld", "Meu primeiro teste...");
-		
-		List<String> lista = new ArrayList<>();
-		lista.add("Valor 1");
-		lista.add("Valor 2");
-		lista.add("Valor 3");
-		
-		teste.addObject("lista", lista);
-		
-		User user = new User();
-		user.setUsername("aluno-java");
-		user.setPassword("123456");
-		
-		teste.addObject("usuario", user);
-		
-		return teste;
-		 
-	 }
-	
-
 	 @RequestMapping("/novopost")
 	 public ModelAndView novoPost() {
 		 

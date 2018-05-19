@@ -39,5 +39,9 @@ public class Stream3 {
 		System.out.println(total);
 
 	}
+	
+	public Integer get() {
+		return null;
+	}
 
 }

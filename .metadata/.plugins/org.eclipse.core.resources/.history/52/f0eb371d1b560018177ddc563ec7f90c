@@ -1,0 +1,5 @@
+package br.com.unitri.posjava.restful.webservicesrestful.representations;
+
+public class TesteRepresentation {
+
+}

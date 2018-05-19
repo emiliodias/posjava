@@ -1,0 +1,14 @@
+package br.com.unitri.posjava.restful.webservicesrestful.resources;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class TesteResource {
+
+	public String teste() {
+		
+		return "Hello World";
+		
+	}
+	
+}

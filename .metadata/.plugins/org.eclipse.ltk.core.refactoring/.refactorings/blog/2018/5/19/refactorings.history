@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;BlogApplication.java&apos; to &apos;webservices-restful/src/main/java/br.com.unitri.posjava.restful.webservicesrestful&apos;&#x0A;- Original project: &apos;blog&apos;&#x0A;- Destination element: &apos;webservices-restful/src/main/java/br.com.unitri.posjava.restful.webservicesrestful&apos;&#x0A;- Original element: &apos;br.edu.unitri.posjava.desenvolvimentoweb.blog.BlogApplication.java&apos;" description="Copy compilation unit" destination="=webservices-restful/src\/main\/java&lt;br.com.unitri.posjava.restful.webservicesrestful" element1="/src\/main\/java&lt;br.edu.unitri.posjava.desenvolvimentoweb.blog{BlogApplication.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1526132799341" units="1" version="1.0"/>
+</session>

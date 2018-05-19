@@ -1,0 +1,12 @@
+INDEX VERSION 1.3+/Users/emiliodias/Documents/Unitri/Pós Graduação/Pos Java/workspace/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+329688245.index
+158538638.index
+1916479098.index
+2683107012.index
+3146755735.index
+25981260.index
+59166209.index
+200530780.index
+4021867980.index
+3513248811.index
+138462189.index

@@ -1,0 +1,25 @@
+package br.com.unitri.posjava.threads;
+
+public class Main {
+
+public static void main(String[] args) throws InterruptedException {
+		
+		Conta conta1 = new Conta(100l);
+		
+		
+		
+		for(int i=0;i<200;i++) {
+		
+			new Thread() {
+				
+				public void run() {
+					
+					conta1.saca(1);
+					
+				}
+				
+			}.start();
+		
+		}
+	
+}
