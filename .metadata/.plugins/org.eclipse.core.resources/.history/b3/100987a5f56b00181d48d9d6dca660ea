@@ -1,0 +1,5 @@
+package br.com.unitri.posjava.oauthresource.resources;
+
+public class HelloWorld {
+
+}

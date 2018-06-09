@@ -1,0 +1,6 @@
+server.port=8081
+google.clientId=fooClientIdPassword	
+google.clientSecret=secret
+google.accessTokenUri=http://localhost:8090/oauth/token
+google.userAuthorizationUri=http://localhost:8090/oauth/authorize
+google.redirectUri=http://localhost:8081/google-login

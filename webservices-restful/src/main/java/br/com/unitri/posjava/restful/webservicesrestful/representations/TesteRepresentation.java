@@ -4,6 +4,8 @@ public class TesteRepresentation {
 	
 	private String name;
 	
+	public TesteRepresentation() {}
+	
 	public TesteRepresentation(String name) {
 		
 		this.name = name;
@@ -16,6 +18,11 @@ public class TesteRepresentation {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	@Override
+	public String toString() {
+		return "TesteRepresentation [name=" + name + "]";
 	}
 
 }
