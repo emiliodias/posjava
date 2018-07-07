@@ -13,8 +13,13 @@ public class ClienteWSImpl implements ClienteWS {
 	private ClienteRepository repository;
 
 	public void salvar(Cliente cliente) {
-	
-		repository.salvar(cliente);
+		
+		Cliente c = repository.buscar(cliente.getId());
+		
+		if(c == null) {
+			repository.salvar(cliente);
+			
+		}
 		
 	}
 

@@ -116,6 +116,63 @@ public class ClienteRepository {
 		this.dataSource = dataSource;
 	}
 	
-	
+	public Cliente buscar(Long id) {
+
+		if(id == null)
+			return null;
+		
+		Cliente cliente = null;
+
+		String sql = "Select * from Cliente where id = ?";
+
+		PreparedStatement stmt = null;
+
+		Connection conn = null;
+
+		try {
+
+			conn = dataSource.getConnection();
+
+			stmt = conn.prepareStatement(sql);
+			
+			stmt.setLong(1, id);
+			
+			ResultSet rs = stmt.executeQuery();
+			
+			
+			while(rs.next()) {
+				
+				cliente = new Cliente();
+				
+				cliente.setCpf(rs.getString("cpf"));
+				cliente.setEndereco(rs.getString("endereco"));
+				cliente.setId(rs.getLong("id"));
+				cliente.setNascimento(rs.getString("nascimento"));
+				cliente.setNome(rs.getString("nome"));
+				cliente.setRg(rs.getString("rg"));
+				cliente.setTelefone(rs.getString("telefone"));
+				
+				
+			}
+			
+
+		} catch (Exception e) {
+
+			e.printStackTrace();
+
+		} finally {
+
+			try {
+				stmt.close();
+				conn.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
+
+		return cliente;
+
+	}
+
 
 }
