@@ -4,14 +4,15 @@
 		<item value="484" key="DIALOG_WIDTH"/>
 		<item value="true" key="TOGGLE_SELECTED"/>
 		<item value="354" key="DIALOG_HEIGHT"/>
-		<item value="1196" key="DIALOG_X_ORIGIN"/>
-		<item value="75" key="DIALOG_Y_ORIGIN"/>
+		<item value="2476" key="DIALOG_X_ORIGIN"/>
+		<item value="23" key="DIALOG_Y_ORIGIN"/>
 	</section>
 	<section name="ExternalProjectImportWizard">
 		<item value="false" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="/Users/emiliodias/Documents/Unitri/Pós Graduação/Pos Java/workspace/exampleclient-oauth2"/>
 			<item value="/Users/emiliodias/Documents/Unitri/Pós Graduação/Pos Java/workspace"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">

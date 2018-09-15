@@ -19,6 +19,8 @@ import org.apache.http.impl.client.HttpClients;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.util.EntityUtils;
 import org.json.JSONObject;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -26,7 +28,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class AuthorizationGoogleAPICallback {
 
 	@RequestMapping("/callback")
-	public void authorize(HttpServletRequest request, HttpServletResponse resp) {
+	public HttpEntity<String> authorize(HttpServletRequest request, HttpServletResponse resp) {
 
 		String code = request.getParameter("code");
 
@@ -73,6 +75,8 @@ public class AuthorizationGoogleAPICallback {
 		String accessToken = (String) object.get("access_token");
 
 		System.out.println("Access Token: " + accessToken);
+		
+		return ResponseEntity.ok(accessToken);
 
 	}
 

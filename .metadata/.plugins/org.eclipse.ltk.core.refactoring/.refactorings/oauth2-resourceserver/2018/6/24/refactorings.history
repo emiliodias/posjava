@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;ResourceServerApplication.java&apos; to &apos;gmail-api-exemplos/src/main/java/br.com.unitri.posjava&apos;&#x0A;- Original project: &apos;oauth2-resourceserver&apos;&#x0A;- Destination element: &apos;gmail-api-exemplos/src/main/java/br.com.unitri.posjava&apos;&#x0A;- Original element: &apos;br.com.unitri.posjava.oauthresource.ResourceServerApplication.java&apos;" description="Copy compilation unit" destination="=gmail-api-exemplos/src\/main\/java&lt;br.com.unitri.posjava" element1="/src\/main\/java&lt;br.com.unitri.posjava.oauthresource{ResourceServerApplication.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1529156151426" units="1" version="1.0"/>
+</session>
